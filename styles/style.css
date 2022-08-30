@@ -1,0 +1,185 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  --body-bg-color: hsl(240, 5%, 7%);
+  --text-color: hsl(240, 9%, 89%);
+  --title-color: hsl(147, 96%, 42%);
+  --form-color: hsl(0, 0%, 66%);
+  --bg-button-color: hsl(258, 73%, 62%);
+  --white-text: hsl(0, 0%, 100%);
+  --input-placeholder-color: hsl(0, 0%, 42%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.background {
+  position: absolute;
+  background: var(--body-bg-color);
+  z-index: 1;
+
+  width: 50%;
+  height: 100%;
+}
+
+.form {
+  margin: 5rem 0 0 3rem;
+}
+
+.form .logo {
+  max-width: 38.9rem;
+  margin-bottom: 9.2rem;
+}
+
+.form .description {
+  margin-bottom: 5rem;
+  margin-left: 0.6rem;
+}
+
+.form h1 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+
+  margin-bottom: 1.2rem;
+
+  color: var(--title-color);
+}
+
+.form h3 {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+
+  margin-bottom: 1rem;
+
+  color: var(--white-text);
+}
+
+.form p {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form .emailForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form .emailForm h2 {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+
+  margin-bottom: 1.7rem;
+
+  color: #a8a8a8;
+}
+
+.form .emailForm input {
+  width: 79.8rem;
+  height: 4.8rem;
+  outline: none;
+  border: none;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+  background-color: var(--white-text);
+  border-left: 0.5rem solid var(--title-color);
+  border-right: 4.8rem solid var(--bg-button-color);
+  padding-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+.form .emailForm::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 4.7rem;
+  left: 76.3rem;
+  background: url('../assets/send.svg') center center no-repeat;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.form .emailForm input::placeholder {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: var(--input-placeholder-color);
+}
+
+.form .emailForm a {
+  display: flex;
+  align-items: center;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+
+  color: var(--bg-button-color);
+}
+
+.form .emailForm a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+/* 
+.img {
+  position: relative;
+}
+.img .inputSend{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0;
+  left: 10rem;
+  background: url('./assets/send.svg');
+  border: 1px solid hsl(0, 0%, 53%);
+  border-radius: 4px;
+  z-index: 1000;
+} */
